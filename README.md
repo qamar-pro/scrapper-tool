@@ -1,10 +1,10 @@
 # Event Discovery & Tracking Tool
 
-A production-ready Python application for discovering and tracking events from BookMyShow and District platforms for photobooth installation opportunities.
+A production-ready Python application for discovering and tracking events from the District platform for photobooth installation opportunities.
 
 ## 🎯 Features
 
-- **Multi-Platform Scraping**: Extract event data from BookMyShow and District
+- **Platform Scraping**: Extract event data from District
 - **City Selection**: Filter events by specific cities
 - **Automated Scheduling**: Run at regular intervals using cron/scheduler
 - **Excel/Google Sheets Integration**: Store and update data seamlessly
@@ -182,7 +182,7 @@ Add cities in `src/utils/config.py`
 | URL | Link to event page |
 | Status | Active/Expired/Updated |
 | Last Updated | Timestamp of last update |
-| Source | Platform (BookMyShow/District) |
+| Source | Platform (District) |
 
 ## ⚙️ Automation
 

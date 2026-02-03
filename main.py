@@ -8,7 +8,6 @@ from typing import List
 
 from src.utils.config import config
 from src.utils.logger import setup_logger
-from src.scrapers.bookmyshow_scraper import BookMyShowScraper
 from src.scrapers.district_scraper import DistrictScraper
 from src.storage.excel_storage import ExcelStorage
 
@@ -38,7 +37,6 @@ def get_storage():
 def get_scrapers(city: str, platforms: List[str]):
     """Create scrapers for the requested platforms"""
     mapping = {
-        "bookmyshow": BookMyShowScraper,
         "district": DistrictScraper,
     }
     scrapers = []

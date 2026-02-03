@@ -54,7 +54,7 @@ class Config:
         )
         
         # Platforms
-        platforms_str = os.getenv('PLATFORMS', 'bookmyshow,district')
+        platforms_str = os.getenv('PLATFORMS', 'district')
         self.PLATFORMS = [p.strip() for p in platforms_str.split(',')]
         
         # Rate limiting
@@ -84,15 +84,6 @@ class Config:
     def get_city_url_mapping(self, platform: str) -> dict:
         """Get city URL mappings for different platforms"""
         mappings = {
-            'bookmyshow': {
-                'Mumbai': 'https://in.bookmyshow.com/explore/home/mumbai',
-                'Delhi': 'https://in.bookmyshow.com/explore/home/ncr',
-                'Bangalore': 'https://in.bookmyshow.com/explore/home/bengaluru',
-                'Hyderabad': 'https://in.bookmyshow.com/explore/home/hyderabad',
-                'Chennai': 'https://in.bookmyshow.com/explore/home/chennai',
-                'Pune': 'https://in.bookmyshow.com/explore/home/pune',
-                'Kolkata': 'https://in.bookmyshow.com/explore/home/kolkata',
-            },
             'district': {
                 'Mumbai': 'https://www.district.in/',
                 'Delhi': 'https://www.district.in/',
